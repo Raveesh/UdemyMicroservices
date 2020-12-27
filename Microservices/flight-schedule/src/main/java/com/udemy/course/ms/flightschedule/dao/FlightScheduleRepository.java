@@ -1,0 +1,9 @@
+package com.udemy.course.ms.flightschedule.dao;
+
+import com.udemy.course.ms.flightschedule.models.Flight;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.query.QueryByExampleExecutor;
+
+public interface FlightScheduleRepository extends JpaRepository<Flight,Long>, QueryByExampleExecutor<Flight> {
+
+}
